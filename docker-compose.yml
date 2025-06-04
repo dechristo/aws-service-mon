@@ -1,0 +1,23 @@
+version: "2.4"
+services:
+  backend:
+    build:
+      context: .
+    environment:
+      - APP_ENCRYPTION_PASSWORD=${APP_ENCRYPTION_PASSWORD}
+    ports:
+      - 9100:9100
+  frontend:
+    build:
+      context: ./src/fe-app
+    ports:
+      - 4200:4200
+    depends_on:
+      - backend
+
+  httpmon:
+    build:
+      context: ./src/http-mon
+    ports:
+      - 3030:3030
+

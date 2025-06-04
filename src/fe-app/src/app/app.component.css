@@ -1,0 +1,41 @@
+.chart-container-single {
+  margin-top: 30px;
+  display: flex;
+}
+
+.chart-container-double {
+  display: flex;
+  margin-top: 30px;
+}
+
+.chart {
+  margin-left: 30px;
+}
+
+.menu{
+  width: 100%;
+  background-color: burlywood;
+  font-size: 16px !important;
+}
+
+.mat-mdc-menu-item:hover {
+  background-color: rgb(237, 236, 189) !important;
+}
+
+.mat-mdc-menu-item:hover {
+  font-size: 12px !important;
+}
+
+.mat-mdc-menu-content {
+  font-size: 14px !important;
+  padding: 0 !important;
+}
+
+.mat-mdc-menu-panel {
+  background-color: beige !important;
+  padding: 0 !important;
+}
+
+.mdc-list-item__primary-text {
+  font-size: 12px !important;
+}

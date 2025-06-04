@@ -1,0 +1,23 @@
+<div class="first-row">
+  <app-mem-chart [chartId]="chartIdMem" ></app-mem-chart>
+</div>
+<div class="first-row">
+<app-executor-active-fetcher></app-executor-active-fetcher>
+</div>
+<div class="second-row">
+  <div class="health-widget">
+    <app-instance-health></app-instance-health>
+  </div>
+  <div class="active-users-widget">
+    <app-db-pool-details></app-db-pool-details>
+  </div>
+</div>
+<div class="third-row">
+  <div class="http-errors-widget">
+    <app-total-http-errors></app-total-http-errors>
+  </div>
+  <div>
+    <app-db-total-timeout [chartId]="dbTotalTimeoutChartHome"></app-db-total-timeout>
+  </div>
+</div>
+<router-outlet></router-outlet>

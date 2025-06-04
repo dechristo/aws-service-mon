@@ -1,0 +1,23 @@
+.db-container {
+  display: flex;
+  width: 100%;
+}
+
+.db-details {
+  font-size: 12px;
+}
+
+fieldset{
+  margin-left: 50px;
+  margin-top: 15px;
+  border-color:  rgb(179, 236, 179);
+  background-color:  rgb(207, 236, 189);
+  border-radius: 2px;
+}
+
+legend {
+  font-size: 14px;
+  background-color: rgb(131, 232, 131);
+  border-radius: 2px;
+  padding: 5px 10px;
+}

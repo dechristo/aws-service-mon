@@ -1,0 +1,8 @@
+<fieldset>
+  <legend>Last active users</legend>
+  <ul>
+    <li *ngFor="let activeUser of activeUsers">
+    <span>{{activeUser.start}}: </span> <b>{{activeUser.user}}</b>
+    </li>
+  </ul>
+</fieldset>

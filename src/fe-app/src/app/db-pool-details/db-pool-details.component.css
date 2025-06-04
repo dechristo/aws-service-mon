@@ -1,0 +1,18 @@
+li {
+  font-size: 16px;
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 5px;
+}
+
+span {
+  color: rgb(51, 107, 238);
+}
+
+fieldset {
+  height: 160px;
+  font-size: 20px;
+  border-radius: 4px;
+}

@@ -1,0 +1,25 @@
+<fieldset>
+  <legend>Instances State</legend>
+  <div class="health-container">
+    <div class="instance-details-container">
+      <div class="instance-id">EC2 #1:</div>
+      <div [ngClass]="{
+        up: latestHealthCheckInstance1 == 'UP',
+        down: latestHealthCheckInstance1 == 'DOWN',
+        unknown: latestHealthCheckInstance1 == 'UNKNOWN' }" class="instance-health">
+        {{latestHealthCheckInstance1}}
+      </div>
+      <div class="instance-info">started: {{appStartTimeInstance1 | date: "dd.MM.yyyy HH:mm:ss"}}, <b>{{appStartedDaysInstance1}}</b></div>
+    </div>
+    <div class="instance-details-container">
+      <div class="instance-id">EC2 #2:</div>
+      <div [ngClass]="{
+        up: latestHealthCheckInstance2 == 'UP',
+        down: latestHealthCheckInstance2 == 'DOWN',
+        unknown: latestHealthCheckInstance2 == 'UNKNOWN' }" class="instance-health">
+        {{latestHealthCheckInstance2}}
+      </div>
+      <div class="instance-info">started: {{appStartTimeInstance2 | date: "dd.MM.yyyy HH:mm:ss" }}, <b>{{appStartedDaysInstance2}}</b></div>
+    </div>
+  </div>
+</fieldset>
